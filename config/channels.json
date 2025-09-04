@@ -1,0 +1,48 @@
+{
+  "channels": [
+    {
+      "id": "freespinkod",
+      "name": "Deneme Bonusu - FrespinKod",
+      "username": "@freespinkod",
+      "active": true,
+      "keywords": ["bonus", "kod", "freespin"],
+      "realTimeEnabled": true
+    },
+    {
+      "id": "binbirkod",
+      "name": "Binbirbonus.com Duyuru",
+      "username": "@binbirkod",
+      "active": true,
+      "keywords": ["bonus", "kod", "freespin"],
+      "realTimeEnabled": true
+    }
+  ],
+  "targetGroups": [
+    {
+      "id": "Privatecross",
+      "name": "Private Softwares",
+      "username": "@Privatecross",
+      "active": true,
+      "messageTemplate": "🎰 **YENİ BONUS KODU!** 🎰\n\n💎 **Bonus Kodları:**\n{allBonusCodes}\n\n🔗 **Website:** {websiteUrl}"
+    }
+  ],
+  "settings": {
+    "checkInterval": 15000,
+    "maxMessagesPerCheck": 50,
+    "maxAgeHours": 24,
+    "retryAttempts": 3,
+    "retryDelay": 5000,
+    "realTime": {
+      "enabled": false,
+      "reconnectDelay": 5000,
+      "maxReconnectAttempts": 10,
+      "heartbeatInterval": 30000
+    },
+    "messaging": {
+      "sendDelay": 3000,
+      "batchSize": 3,
+      "onlyWithBonusCode": true,
+      "minMessageLength": 5
+    }
+  }
+} 
